@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <title>Corruption</title>
+    <style>
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .sticky{
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            width: 160px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background: rgb(255, 0, 0,0.8);
+            padding: 5px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.5em;
+        }
+        h1{
+            text-transform: uppercase;
+            margin: 5px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        ol{
+            padding-left: 18px;
+            margin: 0;
+        }
+        .sticky .pa{
+            display: none;
+        }
+        .sticky .pu{
+            display: block;
+        }
+        @media (max-width:600px){
+            .sticky .pa{
+                display: block;
+            }
+            .sticky .pu{
+                display: none;
+            }
+            .sticky{
+                position: sticky;
+                width: 90%;
+                margin: auto;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+        <h1>caution</h1>
+        <div class="pa">
+            <ol>
+                <li>Tap and hold in the image for few second</li>
+                <li>Download image or Save image</li>
+            </ol>
+        </div>
+        <div class="pu">
+            <ol>
+                <li>Right click in the image</li>
+                <li>Save image as...</li>
+            </ol>
+        </div>
+    </div>
+    <img src="../Corruption.png" alt="">
+</body>
+</html>

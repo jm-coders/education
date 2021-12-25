@@ -1,0 +1,97 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    font-size: 20px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+.h2 {
+    font-size: 20px;
+}
+
+.container {
+    width: 1140px;
+    background: linear-gradient(rgb(255, 255, 255, .7), rgb(255, 255, 255, .7)), url(../IMG-20210705-WA0011.jpg) center;
+    background-size: contain;
+    margin: auto;
+    max-width: 90%;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 20px solid transparent;
+    border-image: url(../images.jpg) 10% repeat;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    border: 5px double;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px #000000ab;
+    animation: exaample 0.5s linear alternate;
+    animation-iteration-count: 10;
+    background: blue;
+    position: sticky;
+    bottom: 10px;
+    left: 80%;
+}
+
+@keyframes exaample {
+    0% {
+        background: blue;
+    }
+
+    100% {
+        background: red;
+
+    }
+}
+
+a i {
+    color: #fff;
+}
+
+@media (max-width:400px) {
+    html {
+        box-sizing: border-box;
+    }
+
+    .container {
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+        width: auto;
+        border: 12px solid transparent;
+        border-image: url(../images.jpg) 10% repeat;
+        border-radius: 20px;
+    }
+    span {
+        top: 45px;
+    }
+}
